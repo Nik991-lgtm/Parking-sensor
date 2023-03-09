@@ -90,7 +90,7 @@ void loop()
   //  Give  a short LOW pulse beforehand  to  ensure  a clean HIGH  pulse:
 
   // Since  you use this  pin on  the Arduino board to  send  a
-  // trigger pulse to  the sonar sensor, configure the pin to  an  OUTPUT
+  // trigger pulse to  the sonar sensor, configure the pin to an OUTPUT
   pinMode(trigPin,  OUTPUT);  
   
   digitalWrite(trigPin, LOW); //First reset the pin to  LOW.
@@ -105,10 +105,10 @@ void loop()
   // Then  set it  back  to  LOW (0V)
   // Read  the signal  from  the sensor: a HIGH  pulse whose
   // duration  is  the time  (in microseconds) from  the sending
-  // of  the ping  to  the reception of  its echo  off of  an  object.
+  // of  the ping  to  the reception of  its echo off of  an  object.
   digitalWrite(trigPin, LOW); 
 
-  // Since the voltage of  the echo  pin of  the sensor  has to  be  read
+  // Since the voltage of the echo pin of the sensor  has to be read
   // by  this  pin,  configure it  as  an  INPUT pin.
   pinMode(echoPin,  INPUT); 
 
@@ -186,8 +186,8 @@ void loop()
   }
  }
  
-  // if the LCD display is turned on and if the distance from the obstacle is greater than 100 cm, 
-  // and less than 400 cm turn on the green diode and measure the distance to the obstacle
+  // if the LCD screen is on and if the distance to the obstacle is greater than 100cm and less than 400cm, 
+  // the green diode turns on and the red diode turns off, and the distance to the obstacle is measured
   else if(cm>=100&&cm<=400)
   {
 
